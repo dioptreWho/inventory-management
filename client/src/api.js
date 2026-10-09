@@ -112,5 +112,15 @@ export const api = {
   async getRestockingOrders() {
     const response = await axios.get(`${API_BASE_URL}/orders?order_type=restocking`)
     return response.data
+  },
+
+  async getReportsQuarterly(queryString = '') {
+    const response = await axios.get(`${API_BASE_URL}/reports/quarterly${queryString}`)
+    return response.data
+  },
+
+  async getReportsMonthly(queryString = '') {
+    const response = await axios.get(`${API_BASE_URL}/reports/monthly-trends${queryString}`)
+    return response.data
   }
 }

@@ -93,7 +93,11 @@ export default {
       try {
         apiTasks.value = await api.getTasks()
       } catch (err) {
-        console.error('Failed to load tasks:', err)
+        // Tasks API endpoint not implemented yet - using mock tasks only
+        // Silently fail since we have fallback mock tasks from currentUser
+        if (err.response?.status !== 404) {
+          console.error('Failed to load tasks:', err)
+        }
       }
     }
 

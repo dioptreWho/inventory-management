@@ -342,10 +342,39 @@ export default {
     selectLanguage: '言語を選択'
   },
 
+  // Reports
+  reports: {
+    title: 'パフォーマンスレポート',
+    description: '四半期業績指標と月次トレンドを表示',
+    quarterlyPerformance: '四半期業績',
+    monthlyRevenueTrend: '月次収益トレンド',
+    monthlyRevenueTrendAria: '月次収益トレンドを示す棒グラフ',
+    monthOverMonthAnalysis: '前月比分析',
+    table: {
+      quarter: '四半期',
+      totalOrders: '総注文数',
+      totalRevenue: '総収益',
+      avgOrderValue: '平均注文額',
+      fulfillmentRate: '履行率',
+      month: '月',
+      orders: '注文数',
+      revenue: '収益',
+      change: '変化',
+      growthRate: '成長率'
+    },
+    stats: {
+      totalRevenueYTD: '総収益（年初来）',
+      avgMonthlyRevenue: '平均月次収益',
+      totalOrdersYTD: '総注文数（年初来）',
+      bestPerformingQuarter: '最高業績四半期'
+    }
+  },
+
   // Common
   common: {
     loading: '読み込み中...',
     error: 'エラー',
+    errorLoading: 'データの読み込みに失敗しました。もう一度お試しください。',
     noData: 'データがありません',
     viewDetails: '詳細を見る',
     close: '閉じる',
